@@ -1,0 +1,141 @@
+/* Base Styles */
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body {
+    background-color: rgb(250, 252, 251);
+    background-image: url("Food.jpg");
+}
+
+h2{
+    color: orangered;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.container{
+ /*    margin-left: 10px;
+    margin-right: 10px;*/
+    padding: 0px 10px;
+    height: auto;
+    background: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container1{
+    margin: 10px 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding-bottom:8px;
+   
+    background-color: rgb(170, 170, 170);
+}
+.container2{
+    margin: 10px 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding-bottom:8px;
+
+    background-color: rgb(170, 170, 170);
+}
+.container3{
+    margin: 10px 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding-bottom:8px;
+
+    background-color: rgb(170, 170, 170);
+}
+span:nth-child(1){
+    border: 1px solid black;
+    padding: 0px 6px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    background-color: pink;
+    border-top:0px;
+}
+#red{
+    border: 1px solid black;
+    padding: 0px 6px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    background-color: #cc7f7f;
+    border-top:0px;
+}
+#yellow{
+    border: 1px solid black;
+    padding: 0px 6px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    background-color: #dbd253;
+    border-top:0px;
+}
+h3{
+    color: black;
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+    border-top: 0px;
+    border-right: 30px;
+    border-left: 25px;
+}
+/* Desktop view */
+
+/*@media screen and (max-width: 992px) {
+.container
+{
+ display: block;
+}
+  .container1,.container2 {
+ width: 50%;
+ display: inline;
+ background-color: red;
+  }
+  .container3
+  {
+   display: block;
+  width: calc(100% - 30px)
+  }
+
+}*/
+
+/* Tablet view */
+
+@media screen and (max-width: 992px) {
+  .container
+  {
+/*    background-color: green;*/
+    display: block;
+  }
+   .container1,.container2 {
+    margin: 10px 0px!important;
+    display: inline-block;
+    width: 49%;
+
+  }
+  .container3
+  {
+ margin: 10px 0px!important;
+    width: 99%;
+  }
+ 
+}
+
+/* Mobile view */
+
+@media screen and (max-width: 767px) {
+   .container1,.container2,.container3 {
+   width: 100%;
+  }
+}
